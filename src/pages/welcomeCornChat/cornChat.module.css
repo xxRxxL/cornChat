@@ -1,0 +1,21 @@
+@import "tailwindcss";
+* {
+  @apply box-border;
+}
+.layout {
+  @apply grid  grid-cols-[210px_1fr_210px] grid-rows-[100px_100vh] gap-2
+  sm:grid-cols-[10px_1fr_210p];
+  header {
+    @apply col-start-2 row-start-1;
+  }
+  nav {
+    @apply fixed  w-[210px];
+  }
+  main {
+    @apply col-start-2 row-start-2 p-10 bg-[#d8d5d8aa] border-[#adadad] border-1 rounded-2xl;
+  }
+
+  aside {
+    @apply fixed right-0 w-[210px];
+  }
+}

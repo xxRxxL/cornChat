@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+.asideContainer {
+  @apply flex flex-col gap-5 h-full w-full p-5 bg-[#d8d5d8aa] border-1 border-[#adadad] rounded-b-2xl;
+}
+
+.friends {
+  @apply flex flex-row gap-5 items-center;
+  & img {
+    @apply h-15 w-15 rounded-full;
+  }
+}
+
+.searchContainer {
+  @apply flex flex-row items-center justify-around gap-1 w-full mt-auto;
+
+  & input {
+    @apply p-2 w-1/1 h-10  bg-[#91917c60] border-1 border-[#dbdbdb] rounded-2xl focus:outline-0;
+  }
+
+  img {
+    @apply p-2 h-15 w-18  rounded-full cursor-pointer;
+  }
+}

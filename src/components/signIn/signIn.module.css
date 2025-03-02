@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+.signinLayout {
+  @apply flex justify-center flex-row items-center p-5 gap-2 h-dvh;
+}
+
+.title {
+  @apply flex flex-row p-5 h-[30%] md:w-xs md:text-5xl lg:text-8xl lg:w-xl font-extrabold  border-1 border-[#dbdbdb]  bg-[#d8d5d834] rounded-2xl;
+  .secondTitle {
+    @apply mt-auto;
+  }
+}
+
+.signInContainer {
+  @apply flex flex-col gap-5 p-5 h-[30%] w-2xs border-1 border-[#dbdbdb]  bg-[#d8d5d834] rounded-2xl;
+
+  input {
+    @apply p-2 w-full bg-[#91917c60] border-1 border-[#dbdbdb] rounded-2xl focus:outline-0;
+  }
+
+  button {
+    @apply p-2 w-full  bg-[#91917c60] border-1 border-[#dbdbdb] rounded-2xl cursor-pointer text-[#464645] hover:bg-[#f6ffa8] font-medium;
+  }
+}
+
+.create {
+  @apply mt-auto text-center text-blue-400 font-semibold;
+}

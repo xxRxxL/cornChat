@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+.signupLayout {
+  @apply flex flex-col items-center justify-center h-dvh;
+
+  h3 {
+    @apply mt-auto text-center text-blue-400 font-semibold cursor-pointer;
+  }
+}
+
+.signupButton {
+  @apply text-center p-2 w-1/2 bg-[#91917c60] border-1 border-[#dbdbdb] rounded-2xl cursor-pointer text-[#464645] hover:bg-[#f6ffa8] font-medium;
+}
+
+.signupContainer {
+  @apply flex flex-col items-center font-semibold p-5 gap-5 border-[#dbdbdb] w-2xl  bg-[#d8d5d834] rounded-2xl;
+
+  h1 {
+    @apply text-6xl font-extrabold;
+  }
+  h2 {
+    @apply text-2xl font-semibold;
+  }
+}
+.signupInput {
+  @apply p-2 w-1/2 bg-[#91917c60] border-1 border-[#dbdbdb] rounded-2xl focus:outline-0 appearance-none
+  [&::-webkit-inner-spin-button]:appearance-none;
+}
+.wrapper {
+  @apply flex flex-col items-center gap-5 w-full;
+
+  button {
+    @apply p-2 w-1/2 bg-[#91917c60] border-1 border-[#dbdbdb] rounded-2xl cursor-pointer text-[#464645] hover:bg-[#f6ffa8] font-medium;
+  }
+}
+.verify {
+  @apply flex flex-row items-center gap-3 w-1/2;
+
+  button {
+    @apply p-2 w-1/2 bg-[#91917c60] border-1 border-[#dbdbdb] rounded-2xl cursor-pointer text-[#464645] hover:bg-[#f6ffa8] font-medium;
+  }
+}

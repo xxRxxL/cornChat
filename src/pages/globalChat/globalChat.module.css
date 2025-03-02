@@ -1,0 +1,31 @@
+@import "tailwindcss";
+* {
+  @apply box-border;
+}
+.layout {
+  @apply grid  grid-cols-[210px_1fr] grid-rows-[100px_100vh] gap-2;
+  header {
+    @apply col-start-2 row-start-1;
+  }
+  nav {
+    @apply fixed  w-[210px];
+  }
+  main {
+    @apply col-start-2 row-start-2 p-10 bg-[#d8d5d8aa] border-[#adadad] border-1 rounded-2xl;
+  }
+
+  aside {
+    @apply fixed mt-50   z-10 gap-5 p-5 w-[210px];
+  }
+}
+
+/* .navLink {
+  @apply flex items-center w-full p-1 gap-2 text-nowrap text-sm font-semibold cursor-pointer hover:bg-amber-300 transition-all duration-500 rounded-full;
+  .linkImg {
+    @apply h-10 w-10 rounded-full;
+  }
+} */
+
+.friendsTab {
+  @apply flex items-center w-full p-1 gap-2 text-nowrap text-sm font-semibold cursor-pointer hover:bg-amber-300 transition-all duration-500 rounded-full;
+}

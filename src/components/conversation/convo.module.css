@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+.convoLayout {
+  @apply flex flex-col gap-5;
+}
+.userContainer {
+  @apply mt-auto;
+
+  img {
+    @apply h-12 w-2xs rounded-full lg:h-12 lg:w-15;
+  }
+}
+
+.chatContainer {
+  @apply flex flex-row gap-2;
+  p {
+    @apply p-5 border-[#adadad] border-1 rounded-2xl;
+  }
+}
+
+/* chat ng user */
+.userChat {
+  @apply md:ml-15 lg:ml-80;
+  p {
+    @apply p-5 border-[#adadad] border-1 rounded-2xl;
+  }
+}
+
+.userInput {
+  @apply flex flex-row gap-2 h-10 ml-auto;
+  textarea {
+    @apply p-2 lg:w-100 w-full contain-content overflow-hidden  resize-none
+  
+    bg-[#91917c60] border-1 border-[#dbdbdb] rounded-2xl focus:outline-0;
+  }
+  img {
+    @apply h-full w-12 rounded-full cursor-pointer;
+  }
+}

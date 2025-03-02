@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+.sideNav {
+  @apply flex flex-col gap-5 p-5 h-full w-full bg-[#d8d5d8aa] border-[#adadad] border-r-1;
+}
+
+.signOut {
+  @apply mt-auto p-2 w-full  bg-[#91917c60] border-1 border-[#dbdbdb] rounded-2xl cursor-pointer text-[#464645] hover:bg-[#f6ffa8] font-medium;
+}
+.navLink {
+  @apply flex items-center w-full p-1 gap-2 text-nowrap text-sm font-semibold cursor-pointer hover:bg-amber-300 transition-all duration-500 rounded-full;
+}
+
+.linkImg {
+  @apply h-10 w-10 rounded-full;
+}
+
+.friendsTab {
+  @apply hidden flex items-center w-full p-1 gap-2 text-nowrap text-sm font-semibold cursor-pointer hover:bg-amber-300 transition-all duration-500 rounded-full;
+}
